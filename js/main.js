@@ -70,9 +70,16 @@ const swiper = new Swiper('.top-slider', {
 const swiper2 = new Swiper('.anounce__swiper', {
   // Optional parameters
   direction: 'horizontal',
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 70,
   loop: true,
+  breakpoints: {
+    1050: {
+      slidesPerView: 3,
+      paceBetween: 70,
+      oop: true
+    }
+  },
 
   // Navigation arrows
   navigation: {
